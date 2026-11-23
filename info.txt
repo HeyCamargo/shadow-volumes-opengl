@@ -1,0 +1,10 @@
+data: 2026-10-14 19:36:23
+GPU (GL_RENDERER): Intel(R) Iris(R) Xe Graphics
+OpenGL (GL_VERSION): 3.3.0 - Build 32.0.101.7085
+CPU: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+SO: Windows-11-10.0.26200-SP0
+Python: 3.13.1 | numpy 2.5.4 | trimesh 5.1.1 | moderngl 5.13.0 | glfw 2.10.2
+resolução: 1280x720 | vsync desligado
+medição: >= 3.0s e >= 30 quadros por repetição, 3 repetições, 20 quadros de aquecimento
+níveis de subdivisão: [0, 1, 2, 3, 4, 5] | luzes: [1, 2, 4, 8]
+cena: 3 esferas (projetam sombra) + chão (só recebe); câmera e luzes determinísticas por quadro

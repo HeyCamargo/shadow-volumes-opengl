@@ -1,0 +1,23 @@
+RESUMO DO BENCHMARK
+========================================
+Tempo de quadro x nº de luzes (com sombras): ajuste linear  ms = a + b * luzes
+      60 tri: b =   0.764 ms/luz | a =   3.775 ms | R2 = 0.9868
+     240 tri: b =   0.842 ms/luz | a =   3.797 ms | R2 = 0.9880
+     960 tri: b =   0.451 ms/luz | a =   4.995 ms | R2 = 0.6915
+    3840 tri: b =   1.609 ms/luz | a =   3.920 ms | R2 = 0.9784
+   15360 tri: b =   5.027 ms/luz | a =   5.015 ms | R2 = 0.9818
+   61440 tri: b =  33.412 ms/luz | a =   1.707 ms | R2 = 0.9984
+
+Participação da CPU (silhueta+extrusão+envio) no quadro, 61440 tri, com sombras:
+  1 luz(es): CPU 27.43 ms de 31.42 ms (87%)
+  2 luz(es): CPU 63.41 ms de 69.06 ms (92%)
+  4 luz(es): CPU 131.71 ms de 141.03 ms (93%)
+  8 luz(es): CPU 247.51 ms de 266.50 ms (93%)
+
+Sobrecusto médio das sombras (quadro com / quadro sem):
+      60 tri: 1.50x
+     240 tri: 1.48x
+     960 tri: 1.45x
+    3840 tri: 2.06x
+   15360 tri: 4.19x
+   61440 tri: 19.84x
